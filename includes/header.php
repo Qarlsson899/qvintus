@@ -1,6 +1,6 @@
 <?php
-require_once 'includes/class.user.php';
-require_once 'includes/config.php';
+require_once 'class.user.php';
+require_once 'config.php';
 ?>
 
 <!DOCTYPE html>

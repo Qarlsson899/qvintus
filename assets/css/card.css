@@ -1,0 +1,47 @@
+/* Existing styles */
+.card {
+    max-width: 220px; /* Smaller cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.card img {
+    padding: 10px; /* Space between image and edges of card */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures the body takes full height */
+    text-align: center; /* Centers the text horizontally */
+}
+
+/* New styles for the hover effect and card as a button */
+.card-link {
+    text-decoration: none;
+    color: inherit;  /* Ensure the text color remains the same */
+    display: block;  /* Make the entire card clickable */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Target only the last card */
+.custom-left-align .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top (vertically) */
+    align-items: flex-start; /* Align content to the left (horizontally) */
+    height: 100%;
+    text-align: left; /* Ensure the text is aligned to the left */
+}
+
+
